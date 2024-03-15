@@ -3,6 +3,5 @@ locals {
   uniq_name     = length(regexall("[[:alnum:]]", chomp(trimspace(var.unique_name_string)))) < 1 ? "" : "${var.unique_name_string}-"
   tags = merge({
     "terraform" : "yes",
-    "module" : "terraform-azurerm-aks-module"
   }, var.tags)
 }
