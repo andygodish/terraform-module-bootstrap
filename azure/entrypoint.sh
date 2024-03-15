@@ -3,7 +3,10 @@ cp -r /module/. /copy/
 rm /copy/dockerfile
 rm /copy/entrypoint.sh
 
-echo '<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->\n<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->' > README.md
+cat > /copy/README.md <<EOF
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+EOF
 
 chown appuser:appgroup -R /copy
 
