@@ -1,8 +1,8 @@
-## Terraform Module Bootstrapper
-
-A standardized way to quickly bootstrap a new Terraform module that fits the standards I use at work. 
-
 ### Quickstart
+
+#### Build the Image
+
+
 
 Create a new directory for your terraform module:
 
