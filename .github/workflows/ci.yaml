@@ -48,3 +48,4 @@ jobs:
       uses: go-semantic-release/action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        force-bump-patch-version: true
