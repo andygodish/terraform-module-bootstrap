@@ -11,7 +11,7 @@ Depending on your cloud provider, cd into that directory and build the image:
 ```
 cd azure
 
-docker build -t tf-mod-boot .
+docker build -t terraform .
 ```
 
 #### Creating a Module
@@ -23,7 +23,7 @@ mkdir new-module && cd new-module
 Run the docker container making sure to mount your new directory to the `/copy` *(see entrypoint.sh)* directory of the container:
 
 ```
-docker run -it -v $PWD:/copy tf-mod-boot
+docker run -it -v $PWD:/copy terraform
 ```
 
 ##### entrypoint.sh
